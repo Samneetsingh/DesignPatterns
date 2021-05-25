@@ -8,12 +8,17 @@ class ProductCollection {
 
   def add(product: Product): Unit = products.append(product)
 
-  class ProductIterator() extends Iterator[Product] {
-    override def hasNext: Boolean = ???
+  def iterator(): Iterator[Product] = new ProductIterator()
 
-    override def current: Product = ???
+  class ProductIterator(var index: Int = 0) extends Iterator[Product] {
 
-    override def next(): Unit = ???
+    override def hasNext: Boolean = this.index < products.length
+
+    override def next(): Product = {
+      val product = products(index)
+      index += 1
+      product
+    }
   }
 
 }

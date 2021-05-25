@@ -2,7 +2,7 @@ package behavioral.state
 
 import behavioral.state.modes.{DriveMode, WalkMode}
 
-object State {
+object StatePattern {
   def main(args: Array[String]): Unit = {
     val driveMode = new DriveMode()
     val service = new DirectionService(driveMode)

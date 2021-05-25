@@ -1,6 +1,6 @@
 package behavioral.memento
 
-object Memento {
+object MementoPattern {
 
   def main(args: Array[String]): Unit = {
     val history = new WordDocumentHistory()
