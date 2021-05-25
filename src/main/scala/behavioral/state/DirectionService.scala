@@ -1,5 +1,7 @@
 package behavioral.state
 
+import behavioral.state.modes.TravelMode
+
 class DirectionService(var travelMode: TravelMode) {
 
   def getEta: String = this.travelMode.getETA

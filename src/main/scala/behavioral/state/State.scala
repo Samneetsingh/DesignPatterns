@@ -1,5 +1,7 @@
 package behavioral.state
 
+import behavioral.state.modes.{DriveMode, WalkMode}
+
 object State {
   def main(args: Array[String]): Unit = {
     val driveMode = new DriveMode()

@@ -1,4 +1,4 @@
-package behavioral.state
+package behavioral.state.modes
 
 class WalkMode extends TravelMode {
     def getETA: String = "Walk Time"
